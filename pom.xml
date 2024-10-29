@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.foxhis.boot</groupId>
+        <artifactId>foxhis-web-starter-parent</artifactId>
+        <version>3.0.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.foxhis</groupId>
+    <!--  项目名称  -->
+    <artifactId>test-web</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>${project.artifactId}</name>
+    <packaging>pom</packaging>
+
+    <properties>
+        <!-- 218 上 /XMS-TEST/下的子目录名称    -->
+        <fs218.todir>test</fs218.todir>
+        <!-- K8S 上 /foxinstall/下的子目录名称    -->
+        <k8s.todir>test</k8s.todir>
+        <!-- K8S 上 项目名称     -->
+        <k8s.proj>devonly</k8s.proj>
+        <!-- K8S 上 应用名称    -->
+        <k8s.app>test-web</k8s.app>
+
+        <!-- 网站部署目录：部署到根目录设置为空，部署到某个目录，设置为/xxx  -->
+        <webapps.root></webapps.root>
+    </properties>
+
+</project>

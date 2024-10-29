@@ -1,0 +1,46 @@
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  // do not use same name, it will override.
+  $colors:
+    (
+      "primary": (
+        "base": #0055ce,
+      ),
+      "success": (
+        "base": #1dad39,
+      ),
+      "warning": (
+        "base": #e28b00,
+      ),
+      "danger": (
+        "base": #db2828,
+      ),
+      "error": (
+        "base": #db2828,
+      ),
+      "info": (
+        "base": #636d7e,
+      )
+    ),
+
+  $dialog: (
+    "border-radius": 12px,
+    "title-font-size": var(--el-font-size-medium)
+  ),
+  $text-color: ("primary": #495765),
+  $popper: ("border-radius": 12px),
+  //popper边框圆角
+  $pagination: ("font-size": 12px),
+  $font-size: ("base": 12px),
+  $menu: (
+    "bg-color": #f4f8fb,
+    "active-color": #fff,
+    "hover-bg-color": #3360e5,
+    "hover-text-color": #fff
+  )
+);
+
+// if you want to import all
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+// You can comment it to hide debug info.
+// @debug $--colors;
